@@ -1,5 +1,5 @@
 /**
- * Class that prints to screen the prime summed digits from 1-10000
+ * Class that prints to screen the prime summed digits from 1-100,000
  */
 public class SumAndPrime {
     /**
@@ -34,7 +34,7 @@ public class SumAndPrime {
     }
 
     /**
-     * Main used to run functions to find the summed digit and if the resulting value is prime.
+     * Main used to run functions to find the summed digit and if the resulting value is prime from values 1-100,000.
      * Prints the prime summed digit to the screen.
      * @param args
      */

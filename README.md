@@ -10,4 +10,4 @@ Prints the sum of the digits of a number if the sum is a prime number.
 # To Add
 - Integration testing to determine if the correct values are being printed to the screen.
 # Assumptions Made
-- ALL values that digit values are prime should be printed to the screen, even when they have already been printed. 
+- ALL summed digit values that are prime should be printed to the screen, even when they have already been printed. 

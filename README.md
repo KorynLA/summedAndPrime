@@ -5,6 +5,7 @@ Prints the sum of the digits of a number if the sum is a prime number.
 # To run this locally:
 - Clone repository: git@github.com:KorynLA/summedAndPrime.git
 - javac src/SumAndPrime.java
-- java src/SumeAndPrime
+- cd src
+- java SumeAndPrime
 # To Add
 - Integration testing to determine if the correct values are being printed to the screen.

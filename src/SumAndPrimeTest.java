@@ -8,10 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
  * Value with 2 digits: 15
  * Value with 3 digits: 771
  * Value with 4 digits: 9999
- * Value with 5 digits: 10000
+ * Value with 5 digits: 99999
+ * Value with 6 digits: 100000
  * Value that is prime: 15 - 6
- * Value that is not prime: 10000 - 1
- * Prime Edge Cases
+ * Value that is not prime: 100000 - 1
+ * Prime Digit Edge Cases
  * Digit value: 1
  * Digit value: 2
  */
@@ -21,10 +22,10 @@ public class SumAndPrimeTest {
     private final int twoNonPrimeDigits = 15;
     private final int threePrimeDigits = 775;
     private final int fourNonPrimeDigits = 9999;
-    private final int fivePrimeDigits = 10000;
+    private final int fiveNonPrimeDigits = 99999;
+    private final int sixPrimeDigits = 100000;
     private final int twoNonPrimeSummedDigit = 6;
-    private final int fivePrimeSummedDigit = 1;
-
+    private final int sixPrimeSummedDigit = 1;
     @Test
     public void sumSingleDigit_shouldReturn3() {
         assertEquals(3, testExample.sumDigits(singlePrimeDigit));
@@ -43,15 +44,19 @@ public class SumAndPrimeTest {
         assertEquals(36, testExample.sumDigits(fourNonPrimeDigits));
     }
     @Test
-    public void sumFiveDigits_shouldReturn1() {
-        assertEquals(1, testExample.sumDigits(fivePrimeDigits));
+    public void sumFiveDigits_shouldReturn45() {
+        assertEquals(45, testExample.sumDigits(fiveNonPrimeDigits));
     }
     @Test
-    public void isPrime_shouldReturnTrue() {
-        assertEquals(true, testExample.isPrime(fivePrimeSummedDigit));
+    public void sumSixDigits_shouldReturn1() {
+        assertEquals(1, testExample.sumDigits(sixPrimeDigits));
     }
     @Test
-    public void isNonPrime_shouldReturnFalse() {
+    public void isPrime1_shouldReturnTrue() {
+        assertEquals(true, testExample.isPrime(sixPrimeSummedDigit));
+    }
+    @Test
+    public void isNonPrime6_shouldReturnFalse() {
         assertEquals(false, testExample.isPrime(twoNonPrimeSummedDigit));
     }
     @Test
